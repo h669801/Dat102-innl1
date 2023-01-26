@@ -1,10 +1,30 @@
 package no.hvl.data102;
 
-public class FilmArkiv {
+public interface FilmArkiv {
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-
+	Film finnFilm(int nr);
+	if(nr == filmnr) {
+		return Film();
 	}
+	
+    void leggTilFim(Film nyFilm);
+	
+	
+	boolean slettFilm(int filmnr);
+	
+	
+	Film[] soekTittel(String delstreng);
+	
+	
+	Film[] soekProdusent(String delstreng);
+	
+	
+	int antall(Sjanger sjanger); 
+	 
+	 /** 
+	  *  
+	  * @return antall filmer i arkivet 
+	  */ 
+	 int antall();
 
 }
