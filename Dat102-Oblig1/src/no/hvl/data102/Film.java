@@ -2,14 +2,19 @@ package no.hvl.data102;
 
 public class Film {
 	
-	public static int filmnr;
-	public static String produsent;
-	public static String tittel;
-	public static int årstall;
-	public static String filmselskap;
+	public int filmnr;
+	public String produsent;
+	public String tittel;
+	public int årstall;
+	public String filmselskap;
 	
 	public Film() {
-		this(filmnr, produsent,tittel,årstall, filmselskap);
+		//this(filmnr, produsent,tittel,årstall, filmselskap);
+		filmnr = 1;
+		produsent = "test";
+		tittel = "wow";
+		årstall = 1900;
+		filmselskap = "sjukt";
 	}
 	
 	public Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap) {

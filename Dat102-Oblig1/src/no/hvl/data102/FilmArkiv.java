@@ -1,7 +1,7 @@
 package no.hvl.data102;
 
 public interface FilmArkiv {
-
+	
 	Film finnFilm(int nr);
 	if(nr == filmnr) {
 		return Film();

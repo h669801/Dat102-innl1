@@ -1,10 +1,18 @@
 package no.hvl.data102;
 
-public class Sjanger {
+public enum Sjanger {
+	ACTION, DRAMA, DOCUMENTARY, HISTORY, SCIFI;
+	
+	public static Sjanger finnSjanger(String navn) {
+		Sjanger sjang = null;
+		for (Sjanger sj : Sjanger.values()) {
+			if (sj.toString().equals(navn.toUpperCase())) {
+				sjang = sj;
+				break;
+			}
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+		}
+		return sjang;
 
 	}
-
 }
