@@ -10,11 +10,11 @@ public class Film {
 	
 	public Film() {
 		//this(filmnr, produsent,tittel,årstall, filmselskap);
-		filmnr = 1;
-		produsent = "test";
-		tittel = "wow";
-		årstall = 1900;
-		filmselskap = "sjukt";
+		//filmnr = 1;
+		//produsent = "test";
+		//tittel = "wow";
+		//årstall = 1900;
+		//filmselskap = "sjukt";
 	}
 	
 	public Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap) {
@@ -65,6 +65,7 @@ public class Film {
 		this.filmselskap = filmselskap;
 	}
 	
+	@Override
 	public boolean equals(Object andre) {
 		if (this == andre) {
 			return true;

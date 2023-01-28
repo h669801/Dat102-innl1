@@ -1,6 +1,14 @@
 package no.hvl.data102.adt;
 
+import java.util.Scanner;
+import no.hvl.data102.klient.*;
+import no.hvl.data102.*;
+
 public class Tekstgrensesnitt {
+	
+	public static void main(String[] args) {
+		
+	}
 
 	// lese opplysningene om en FILM fra tastatur  
 	 public Film lesFilm(){ 
@@ -17,6 +25,17 @@ public class Tekstgrensesnitt {
 	 public void skrivUtFilmDelstrengITittel(FilmarkivADT filma,  
 	                                                           String delstreng) { 
 	  // TODO 
+		 
+		 String f = filma.toString();
+		 if (f.contains(delstreng)) {
+			 System.out.println(f);
+		 }
+		 
+//		 Scanner filma = new Scanner(System.in);  // Create a Scanner object
+//		 System.out.println("Søk etter film: ");
+//
+//		 String i = filma.nextLine();  // Read user input
+//		 System.out.println("Filmer : " + i.contains(delstreng));  // Output user input
 	 } 
 	 
 	 // Skriver ut alle Filmer av en produsent / en gruppe 
@@ -33,4 +52,4 @@ public class Tekstgrensesnitt {
 	 
 	}
 
-}
+
