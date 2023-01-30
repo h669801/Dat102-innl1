@@ -7,6 +7,7 @@ public class Film {
 	public String tittel;
 	public int årstall;
 	public String filmselskap;
+	public Sjanger sjanger;
 	
 	public Film() {
 		//this(filmnr, produsent,tittel,årstall, filmselskap);
@@ -17,12 +18,13 @@ public class Film {
 		//filmselskap = "sjukt";
 	}
 	
-	public Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap) {
+	public Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap, Sjanger sjanger) {
 		this.filmnr = filmnr;
 		this.produsent = produsent;
 		this.tittel = tittel;
 		this.årstall = årstall;
 		this.filmselskap = filmselskap;
+		this.sjanger = sjanger;
 	}
 
 	public int getFilmnr() {
@@ -63,6 +65,14 @@ public class Film {
 
 	public void setFilmselskap(String filmselskap) {
 		this.filmselskap = filmselskap;
+	}
+	
+	public Sjanger getSjanger() {
+		return sjanger;
+	}
+	
+	public void setSjanger(Sjanger sjanger) {
+		this.sjanger = sjanger;
 	}
 	
 	@Override
