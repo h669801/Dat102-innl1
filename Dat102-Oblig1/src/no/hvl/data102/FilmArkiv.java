@@ -1,8 +1,9 @@
 package no.hvl.data102;
 
 import no.hvl.data102.adt.*;
+import no.hvl.data102.klient.FilmarkivADT;
 
-public class FilmArkiv {
+public class FilmArkiv implements FilmarkivADT{
 
 	private static final int KAPASITET = 100;
 	private int antall;
@@ -44,5 +45,48 @@ public class FilmArkiv {
 			nyTabell[i] = film[i];
 		}
 		//return nyTabell;
+	}
+
+	@Override
+	public Film finnFilm(int nr) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void leggTilFilm(Film nyFilm) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public boolean slettFilm(int filmnr) {
+		// TODO Auto-generated method stub
+		return false;
+	}
+
+	@Override
+	public Film[] soekTittel(String delstreng) {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public Film[] soekProdusent(String delstreng) {
+		// TODO Auto-generated method stub
+		
+		return soekProdusent(delstreng);
+	}
+
+	@Override
+	public int antall(Sjanger sjanger) {
+		// TODO Auto-generated method stub
+		return antall(sjanger);
+	}
+
+	@Override
+	public int antall() {
+		// TODO Auto-generated method stub
+		return antall;
 	}
 }
