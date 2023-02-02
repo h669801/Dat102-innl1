@@ -21,23 +21,13 @@ public class FilmArkiv implements FilmarkivADT{
 
 	public FilmArkiv(int lengde) {
 		// FilmArkiv arkiv = arkiv.length[antall];
-		utvid();
+		
 		antall = 0;
-		film = (Film[]) (new Object[lengde]);
-	}
-
-	/**
-	 * @return returnerer antall filmer
-	 */
-	public int getAntall() {
-		return antall;
-	}
-
-	/**
-	 * @return returnerer tabellen
-	 */
-	public Film[] getFilm() {
-		return film;
+//		film = (Film[]) (new Object[lengde]);
+		film = new Film[lengde];
+		if (film.length == antall) {
+			utvid();
+		}
 	}
 
 	private void utvid() {
@@ -55,8 +45,6 @@ public class FilmArkiv implements FilmarkivADT{
 		      if (film[i].getFilmnr() == nr) {
 		        return film[i];
 		      }
-//		if (nr == filmnr) {
-//			return getFilm();
 		}
 		return null;
 	}
@@ -97,7 +85,8 @@ public class FilmArkiv implements FilmarkivADT{
 		
 		for (int i = 0; i < antall; i++) {
 			if(film[i].getTittel().contains(delstreng)) {
-				return film[i];
+				
+				return film;
 			}
 		}
 		
@@ -110,7 +99,7 @@ public class FilmArkiv implements FilmarkivADT{
 		
 		for (int i = 0; i < antall; i++) {
 			if(film[i].getProdusent().contains(delstreng)) {
-				return film[i];
+				return film;
 			}
 		}
 		

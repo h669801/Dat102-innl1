@@ -94,7 +94,7 @@ public class Film {
 	
 	@Override 
 	public int hashCode() { 
-	    Integer temp = nr; 
+	    Integer temp = filmnr; 
 	    return temp.hashCode(); 
 	} 
 
