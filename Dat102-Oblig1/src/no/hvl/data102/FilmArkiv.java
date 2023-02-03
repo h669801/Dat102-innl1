@@ -20,10 +20,8 @@ public class FilmArkiv implements FilmarkivADT{
 	 */
 
 	public FilmArkiv(int lengde) {
-		// FilmArkiv arkiv = arkiv.length[antall];
 		
 		antall = 0;
-//		film = (Film[]) (new Object[lengde]);
 		film = new Film[lengde];
 		if (film.length == antall) {
 			utvid();
@@ -35,7 +33,6 @@ public class FilmArkiv implements FilmarkivADT{
 		for (int i = 0; i < film.length; i++) {
 			nyTabell[i] = film[i];
 		}
-		//return nyTabell;
 	}
 
 	@Override
@@ -54,7 +51,6 @@ public class FilmArkiv implements FilmarkivADT{
 	public void leggTilFilm(Film nyFilm) {
 		// TODO Auto-generated method stub
 		
-//		FilmArkiv[] film = new FilmArkiv[nyFilm];
 		if (antall < film.length) {
 			film[antall] = nyFilm;
 			antall++;
@@ -85,7 +81,6 @@ public class FilmArkiv implements FilmarkivADT{
 		
 		for (int i = 0; i < antall; i++) {
 			if(film[i].getTittel().contains(delstreng)) {
-				
 				return film;
 			}
 		}
@@ -96,13 +91,15 @@ public class FilmArkiv implements FilmarkivADT{
 	@Override
 	public Film[] soekProdusent(String delstreng) {
 		// TODO Auto-generated method stub
-		
+		int count = 0;
+		Film[] filmer = new Film[antall];
 		for (int i = 0; i < antall; i++) {
-			if(film[i].getProdusent().contains(delstreng)) {
-				return film;
+			if(film[i].getProdusent().contains(delstreng)) {				
+				filmer[count] = film[i];
+				count++;
 			}
 		}
-		return null;
+		return filmer;
 	}
 
 	@Override

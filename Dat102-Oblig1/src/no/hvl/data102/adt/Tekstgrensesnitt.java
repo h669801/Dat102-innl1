@@ -10,18 +10,10 @@ import no.hvl.data102.Sjanger;
 public class Tekstgrensesnitt {
 	int antall;
 
-//	public static void main(String[] args) {
-//		lesFilm();
-//		visFilm()
-//	}
-
 	// lese opplysningene om en FILM fra tastatur
 	public Film lesFilm() {
 		// TODO
-//		FilmarkivADT film;
 		Scanner scanner = new Scanner(System.in);
-//		System.out.println("Hva er tittelen på filmen? ");
-//		String in = scanner.nextLine();
 
 		System.out.println("filmnr :");
 		int nr = scanner.nextInt();
@@ -49,16 +41,14 @@ public class Tekstgrensesnitt {
 	// vise en film med alle opplysninger på skjerm (husk tekst for sjanger)
 	public void visFilm(Film film) {
 		// TODO
-//		 int o = antall
-//		 for (int i = 0; i < film.; i++) {
-//	            if (this.movies[i].getTitle().equals(title)) {
-//	                return this.movies[i];
+		
 		System.out.println("filmnr : " + film.getFilmnr());
 		System.out.println("Produsent : "+ film.getProdusent());
 		System.out.println("Tittel : " +film.getTittel());
 		System.out.println("Aarstall : " +film.getÅrstall());
 		System.out.println("Filmselskap : " + film.getFilmselskap());
 		System.out.println("Sjanger : " + film.getSjanger());
+		System.out.println();
 	}
 
 	// Skrive ut alle Filmer med en spesiell delstreng i tittelen
@@ -70,22 +60,15 @@ public class Tekstgrensesnitt {
 			System.out.println(f);
 		}
 
-//		 Scanner filma = new Scanner(System.in);  // Create a Scanner object
-//		 System.out.println("Søk etter film: ");
-//
-//		 String i = filma.nextLine();  // Read user input
-//		 System.out.println("Filmer : " + i.contains(delstreng));  // Output user input
 	}
 
 	// Skriver ut alle Filmer av en produsent / en gruppe
 	public void skrivUtFilmProdusent(FilmarkivADT filma, String delstreng) {
 		// TODO Denne gjør tilsvarende som metoden over
-//		String f = filma.toString();
-//		filma.soekTittel(delstreng);
-//		if (filma.soekTittel(delstreng))
-//		if (f.contains(delstreng)) {
-			System.out.println(filma.soekTittel(delstreng));
-//		}
+		Film[] filmer = filma.soekProdusent(delstreng);
+		for(int i = 0; i < filmer.length; i++) {
+			visFilm(filmer[i]);
+		}
 
 	}
 

@@ -17,8 +17,6 @@ public class Filmarkiv2 implements FilmarkivADT {
 	 */
 
 	public Filmarkiv2() {
-		// FilmArkiv arkiv = arkiv.length[antall];
-//		utvid();
 		antall = 0;
 		start = null;
 	}
@@ -96,8 +94,6 @@ public class Filmarkiv2 implements FilmarkivADT {
 	@Override
 	public Film[] soekTittel(String delstreng) {
 		// TODO Auto-generated method stub
-//		Film[] filmer;
-//		Film[] tabell = (Film[]) new Object[antall];
 		LinearNode<Film> aktuell = start;
 		LinearNode<Film> resultat = new LinearNode<>();
 
@@ -113,31 +109,7 @@ public class Filmarkiv2 implements FilmarkivADT {
 			filmer[i] = resultat.getElement();
 		}
 
-		return filmer;
-
-//		while (aktuell != null) {
-//	        if (aktuell.getElement().getTittel().toLowerCase().contains(delstreng.toLowerCase())) {
-//	            resultat.setElement(aktuell.getElement());
-//	            tabell[antall] = resultat;
-//	        }
-//	        aktuell = aktuell.getNeste();
-//	    }
-////		filmer = Film[resultat];
-//	    return resultat.toArray(new Film[resultat.size()]);
-//		
-//		
-//		
-//		for (int soek = 0; soek < antall; soek++) {
-//			if (aktuell.getElement().equals(delstreng)) {
-//				filmer[soek] = filmer[aktuell.getElement()];
-//				return film[aktuell.getTittel()];
-//			} else {
-//				aktuell = aktuell.getNeste();
-//			}
-//		}
-//		return null;
-//		
-//		
+		return filmer;	
 
 	}
 

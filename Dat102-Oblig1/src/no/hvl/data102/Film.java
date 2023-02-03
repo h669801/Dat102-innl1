@@ -10,12 +10,7 @@ public class Film {
 	public Sjanger sjanger;
 	
 	public Film() {
-		//this(filmnr, produsent,tittel,årstall, filmselskap);
-		//filmnr = 1;
-		//produsent = "test";
-		//tittel = "wow";
-		//årstall = 1900;
-		//filmselskap = "sjukt";
+
 	}
 	
 	public Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap, Sjanger sjanger) {

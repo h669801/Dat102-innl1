@@ -13,10 +13,6 @@ public class Meny {
 		tekstgr = new Tekstgrensesnitt();
 		this.filmarkiv = filmarkiv;
 	}
-	
-//	public static void main(String[] args) {
-//		start();
-//	}
 
 	public void start() {
 		// legg inn en del forhåndsdefinerte filmer for å teste metodene
@@ -36,21 +32,10 @@ public class Meny {
 //		tekstgr.visFilm(film3);
 //		tekstgr.skrivUtFilmDelstrengITittel(filmarkiv, "film1");
 		tekstgr.skrivUtFilmProdusent(filmarkiv, "h");
+		
 //		System.out.println(film);
 		
-		
-//		
-//		FilmarkivADT<film> filmarkiv = new Meny<>(5);
-		// Legger til personer
-//		for (int i = 0; i < film.length; i++) {
-//			filmarkiv.leggTilFilm(film[i]);
-//		System.out.println(filmarkiv);
-		
-		
-		
-		// Skriver ut samlingen
-		//((Meny) filmarkiv).skriv();
-//		Film(int filmnr, String produsent, String tittel, int årstall, String filmselskap) {
+			
 	}
 
 }
