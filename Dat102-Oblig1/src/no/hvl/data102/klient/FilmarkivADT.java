@@ -11,16 +11,6 @@ public interface FilmarkivADT {
 	  * @return film med gitt nr. Om nr ikke finnes, returneres null. 
 	  */ 
 	 Film finnFilm(int nr);  
-//	 Film film = null;
-//		for (Film f : Film.values()) {
-//			if (f.toString().equals(navn.toUpperCase())) {
-//				film = f;
-//				break;
-//			}
-//
-//		}
-//		return film;
-//}
 	 
 	 /** 
 	  * Legger til en ny film. 

@@ -55,9 +55,9 @@ public class Tekstgrensesnitt {
 	public void skrivUtFilmDelstrengITittel(FilmarkivADT filma, String delstreng) {
 		// TODO
 		
-		String f = filma.toString();
-		if (f.contains(delstreng)) {
-			System.out.println(f);
+		Film[] filmer = filma.soekTittel(delstreng);
+		for(int i = 0; i < filmer.length; i++) {
+			visFilm(filmer[i]);
 		}
 
 	}

@@ -78,14 +78,16 @@ public class FilmArkiv implements FilmarkivADT{
 	@Override
 	public Film[] soekTittel(String delstreng) {
 		// TODO Auto-generated method stub
-		
+		int count = 0;
+		Film[] filmer = new Film[antall];
 		for (int i = 0; i < antall; i++) {
 			if(film[i].getTittel().contains(delstreng)) {
-				return film;
+				filmer[count] = film[i];
+				count++;
 			}
 		}
 		
-		return null;
+		return filmer;
 	}
 
 	@Override

@@ -17,21 +17,21 @@ public class Meny {
 	public void start() {
 		// legg inn en del forhåndsdefinerte filmer for å teste metodene
 		// TODO
-		Film film1 = new Film ( 1, "Thomas", "film1", 1990, "Warner A", Sjanger.DOCUMENTARY); 
+		Film film1 = new Film ( 1, "Martin Scorese", "Goodfellas", 1990, "Warner Brothers", Sjanger.DOCUMENTARY); 
 		filmarkiv.leggTilFilm(film1);
 		
-		Film film2 = new Film ( 2, "Thomas F", "film2", 1992, "Warner P" , Sjanger.ACTION);
+		Film film2 = new Film ( 2, "Quentin Tarantino", "Inglorius Bastards", 2009, "Sony Studio" , Sjanger.ACTION);
 		filmarkiv.leggTilFilm(film2);
 		
-		Film film3 = new Film ( 3, "Thomas A", "film3", 1996, "Warner Y", Sjanger.DRAMA);
+		Film film3 = new Film ( 3, "Christopher Nolan", "Inception", 2010, "Sky Studio", Sjanger.DRAMA);
 		filmarkiv.leggTilFilm(film3);
 		
 		
 //		tekstgr.skrivUtStatistikk(filmarkiv);
 //		tekstgr.lesFilm();
 //		tekstgr.visFilm(film3);
-//		tekstgr.skrivUtFilmDelstrengITittel(filmarkiv, "film1");
-		tekstgr.skrivUtFilmProdusent(filmarkiv, "h");
+		tekstgr.skrivUtFilmDelstrengITittel(filmarkiv, "In");
+//		tekstgr.skrivUtFilmProdusent(filmarkiv, "h");
 		
 //		System.out.println(film);
 		
