@@ -53,12 +53,12 @@ public class Tekstgrensesnitt {
 //		 for (int i = 0; i < film.; i++) {
 //	            if (this.movies[i].getTitle().equals(title)) {
 //	                return this.movies[i];
-		System.out.println(film.getFilmnr());
-		System.out.println(film.getProdusent());
-		System.out.println(film.getTittel());
-		System.out.println(film.getÅrstall());
-		System.out.println(film.getFilmselskap());
-		System.out.println(film.getSjanger());
+		System.out.println("filmnr : " + film.getFilmnr());
+		System.out.println("Produsent : "+ film.getProdusent());
+		System.out.println("Tittel : " +film.getTittel());
+		System.out.println("Aarstall : " +film.getÅrstall());
+		System.out.println("Filmselskap : " + film.getFilmselskap());
+		System.out.println("Sjanger : " + film.getSjanger());
 	}
 
 	// Skrive ut alle Filmer med en spesiell delstreng i tittelen
@@ -80,10 +80,12 @@ public class Tekstgrensesnitt {
 	// Skriver ut alle Filmer av en produsent / en gruppe
 	public void skrivUtFilmProdusent(FilmarkivADT filma, String delstreng) {
 		// TODO Denne gjør tilsvarende som metoden over
-		String f = filma.toString();
-		if (f.contains(delstreng)) {
-			System.out.println(f);
-		}
+//		String f = filma.toString();
+//		filma.soekTittel(delstreng);
+//		if (filma.soekTittel(delstreng))
+//		if (f.contains(delstreng)) {
+			System.out.println(filma.soekTittel(delstreng));
+//		}
 
 	}
 

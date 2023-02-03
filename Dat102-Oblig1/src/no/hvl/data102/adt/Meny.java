@@ -29,7 +29,16 @@ public class Meny {
 		
 		Film film3 = new Film ( 3, "Thomas A", "film3", 1996, "Warner Y", Sjanger.DRAMA);
 		filmarkiv.leggTilFilm(film3);
+		
+		
+//		tekstgr.skrivUtStatistikk(filmarkiv);
+//		tekstgr.lesFilm();
+//		tekstgr.visFilm(film3);
+//		tekstgr.skrivUtFilmDelstrengITittel(filmarkiv, "film1");
+		tekstgr.skrivUtFilmProdusent(filmarkiv, "h");
 //		System.out.println(film);
+		
+		
 //		
 //		FilmarkivADT<film> filmarkiv = new Meny<>(5);
 		// Legger til personer
